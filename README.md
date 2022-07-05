@@ -3,7 +3,8 @@
 
 ## Installation
 - Fork the project to your account then clone it.
-- Create an virtual environment with `pipenv shell` then install the project packages with `pipenv sync`
+- Create a virtual environment with `pipenv shell` then install the project packages with `pipenv sync`
+- You can convert a Pipfile and Pipfile.lock into a requirements.txt file using `pipenv lock -r` and install in the virtual environment with `pip install -r requirements.txt`
 
 <!--
 NB: 
