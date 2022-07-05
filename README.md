@@ -3,11 +3,8 @@
 
 ## Installation
 - Fork the project to your account then clone it.
-Then install the project packages with ...
+- Create an virtual environment with `pipenv shell` then install the project packages with `pipenv sync`
 
-```bash
-$ pipenv sync
-```
 <!--
 NB: 
 - The project uses a PotsgreSQL Database.
@@ -16,12 +13,13 @@ NB:
 $ psql <db_name>;
 $ CREATE EXTENSION pg_trgm;
 ```
-
+-->
 ## Features
 - The cart is persisted in the session so that the cart items are maintained during a user's visit.
--
+- The App uses celery to add asynchronous tasks to the application. This helps with making the app run smoothly with tasks being executed with urgency.
+- The App uses custom context processor to make the cart available to all the templates.
 
-![alt text for screen readers](./static/images/search.png "Search Module"). -->
+<!-- ![alt text for screen readers](./static/images/search.png "Search Module"). -->
 
 
 ## Contributing
