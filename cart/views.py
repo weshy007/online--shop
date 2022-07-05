@@ -47,5 +47,9 @@ def cart_detail(request):
                                     initial={'quantity': item['quantity'],
                                     'override': True
                                     })
+
+    context = {
+        'cart': cart,
+    }
                                                     
-    return render(request, 'detail.html', {'cart': cart})
+    return render(request, 'detail.html', context)
