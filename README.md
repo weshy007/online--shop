@@ -19,6 +19,8 @@ $ CREATE EXTENSION pg_trgm;
 - The cart is persisted in the session so that the cart items are maintained during a user's visit.
 - The App uses celery to add asynchronous tasks to the application. This helps with making the app run smoothly with tasks being executed with urgency.
 - The App uses custom context processor to make the cart available to all the templates.
+- The payment method of choice is Braintree. It's used by Uber and Airbnb.
+- Admin can generate Invoices as PDF if there are unpaid transactions and print them.
 
 <!-- ![alt text for screen readers](./static/images/search.png "Search Module"). -->
 
