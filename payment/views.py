@@ -24,17 +24,7 @@ def payment_process(request):
                 'submit_for_settlement': True
             }
         })
-        # if result.method == 'POST':
-        #     #retrive nonce
-        #     nonce = request.POST.get('payment_method_nonce', None)
-        #     #create and submit transaction
-        #     result = gateway.transaction.sale({
-        #         'amount': f'{total_cost:.2f}',
-        #         'payment_method_nonce': nonce,
-        #         'options': {
-        #         'submit_for_settlement': True
-        #         }
-        #     })
+
         if result.is_success:
             # mark the order as paid
             order.paid = True
