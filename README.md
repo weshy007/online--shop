@@ -21,6 +21,7 @@ $ CREATE EXTENSION pg_trgm;
 - The App uses custom context processor to make the cart available to all the templates.
 - The payment method of choice is Braintree. It's used by Uber and Airbnb.
 - Admin can generate Invoices as PDF if there are unpaid transactions and print them.
+- The shop has coupons which can be applied either when taking order or when checking out.
 
 <!-- ![alt text for screen readers](./static/images/search.png "Search Module"). -->
 
