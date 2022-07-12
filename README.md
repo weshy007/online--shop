@@ -1,10 +1,11 @@
 # Online SHOP Application
- This is a blog application built with Python(Django), HTML and CSS.
+ This is a blog application built with Python(Django), HTML, CSS and JavaScript.
 
 ## Installation
 - Fork the project to your account then clone it.
 - Create a virtual environment with `pipenv shell` then install the project packages with `pipenv sync`
 - You can convert a Pipfile and Pipfile.lock into a requirements.txt file using `pipenv lock -r` and install in the virtual environment with `pip install -r requirements.txt`
+- Refer to the `.env example` file for more information on PostgreSQL and Braintree configurations for the project.
 
 <!--
 NB: 

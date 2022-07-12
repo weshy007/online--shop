@@ -1,0 +1,9 @@
+DB_NAME='<db name>'
+DB_USER='<db username>'
+DB_PASSWORD='<db password>'
+SECRET_KEY='<django secret key>'
+# Braintree settings
+BRAINTREE_MERCHANT_ID='XXX <braintree merchant id>'
+BRAINTREE_PUBLIC_KEY='XXX <braintree public key>'
+BRAINTREE_PRIVATE_KEY='XXX <braintree private key>'
+# Can be got from https://sandbox.braintreegateway.com/login
