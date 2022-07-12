@@ -1,14 +1,14 @@
 from io import BytesIO
 
 import weasyprint
-from celery import task
+from celery import shared_task
 from django.conf import settings
 from django.core.mail import EmailMessage
 from django.template.loader import render_to_string
 from orders.models import Order
 
 
-@task
+@shared_task
 def payment_completed(order_id):
     """
     Task to send an e-mail notification when an order is
