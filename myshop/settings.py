@@ -52,6 +52,8 @@ INSTALLED_APPS = [
     'payment',
     'coupons',
 
+    'rosetta',
+
 ]
 
 CART_SESSION_ID = 'cart'
